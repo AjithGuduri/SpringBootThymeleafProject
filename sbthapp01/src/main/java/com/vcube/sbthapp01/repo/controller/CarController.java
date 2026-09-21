@@ -13,7 +13,7 @@ public class CarController {
 	@Autowired
 	CarRepo carrepo;
 
-	@GetMapping("/carslog")
+	@GetMapping("/cars")
 	public String listOfCar(Model model) {
 
 		model.addAttribute("cars", carrepo.findAll());
